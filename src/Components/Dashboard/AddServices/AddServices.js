@@ -14,7 +14,7 @@ const AddServices = () => {
             image:imageUrl
         };
        
-        fetch('http://localhost:2000/addServices',{
+        fetch('https://serene-cove-90844.herokuapp.com/addServices',{
             method: 'POST',
             headers:{'Content-Type':'application/json'},
             body: JSON.stringify(eventData)

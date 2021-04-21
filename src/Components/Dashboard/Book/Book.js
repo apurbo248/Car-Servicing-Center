@@ -16,7 +16,7 @@ const Book = () => {
    
     
     useEffect(()=>{
-    fetch(`http://localhost:2000/getSingleItem/${_id}`)
+    fetch(`https://serene-cove-90844.herokuapp.com/getSingleItem/${_id}`)
         .then(res=>res.json())
         .then(data=>{
         
@@ -33,7 +33,7 @@ const Book = () => {
 
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:2000/order',{
+        fetch('https://serene-cove-90844.herokuapp.com/order',{
             method: 'POST',
             headers:{'Content-Type':'application/json'},
             body: JSON.stringify(data,loggedInUser.email)
