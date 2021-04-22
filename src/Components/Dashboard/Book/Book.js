@@ -50,11 +50,11 @@ const Book = () => {
     return (
         <div className="row container-fluid">
             <Sidebar></Sidebar>
-            <div className="col-md-10">
+            <div className="col-md-10"style={{marginLeft:210}}>
                 <h3>Book Service</h3>
          <form onSubmit={handleSubmit(onSubmit)} className="pt-5" >
           
-          <div style={{background:'#fff',margin:'',width:'90%', padding:'', borderRadius:'20px'}}>
+          <div style={{background:'#fff', borderRadius:'20px'}}>
          
            <input className="form-control p-4 mb-3 " type="text" name="name" placeholder="Your name" value={loggedInUser.name}  {...register("Name", {required: true })} />
            {errors.serviceTitle && <span className="text-danger mb-3">This field is required</span>}
@@ -69,7 +69,7 @@ const Book = () => {
            <input className="form-control btn text-white mt-2  w-50" type="submit" />
            </div>
           </div>
-            <div>
+            <div className="pt-3">
             <Elements stripe={stripePromise}>
             <SimpleCard></SimpleCard>
             </Elements>

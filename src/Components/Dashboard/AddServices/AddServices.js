@@ -46,7 +46,7 @@ const AddServices = () => {
     return (
        <div className="row container-fluid">
            <Sidebar></Sidebar>
-           <div className="col-md-10">
+           <div className="col-md-10"style={{marginLeft:210}}>
         
             <h2>
                Add Service
