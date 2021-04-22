@@ -50,7 +50,7 @@ const Book = () => {
     return (
         <div className="row container-fluid">
             <Sidebar></Sidebar>
-            <div className="col-md-10"style={{marginLeft:210}}>
+            <div className="col-md-10"style={{marginLeft:220}}>
                 <h3>Book Service</h3>
          <form onSubmit={handleSubmit(onSubmit)} className="pt-5" >
           

@@ -21,7 +21,7 @@ const MakeAdmin = () => {
     return (
         <div className="row container-fluid">
             <Sidebar></Sidebar>
-            <div className="col-md-10"style={{marginLeft:210}}>
+            <div className="col-md-10"style={{marginLeft:220}}>
             <h2>Add Admin</h2>
             <form onSubmit={handleSubmit(onSubmit)}  style={{background:'#b2bbf0',padding:'50px',borderRadius:'10px'}}>
            <div style={{background:'#fff',margin:'auto',width:'90%', padding:'80px', borderRadius:'20px'}}>

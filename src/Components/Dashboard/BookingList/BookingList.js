@@ -22,7 +22,7 @@ const BookingList = () => {
         return (
             <div className="row container-fluid">
                 <Sidebar></Sidebar>
-                <div className="col-md-10" style={{marginLeft:210}}>
+                <div className="col-md-10" style={{marginLeft:220}}>
                 <h2>Booking list</h2>
                <div className="row">
                     {

@@ -11,7 +11,7 @@ const Dashboard = () => {
               <div className="row container-fluid ">
                                  
                 <Sidebar/>
-                    <div className="col-md-10 text-center text-white bg-warning"style={{marginLeft:210}}>
+                    <div className="col-md-10 text-center text-white bg-warning"style={{marginLeft:220}}>
                     <h3 className="pt-5 mt-5">Wellcome  <h1 className="text-success">{loggedInUser.name}</h1> </h3>
                     </div>
                 </div>
