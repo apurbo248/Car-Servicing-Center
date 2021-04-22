@@ -17,16 +17,10 @@ const Header = () => {
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="/home">Home</a>
+            <Link to="/home" className="nav-link text-white">Home</Link>
             </li>
             <li class="nav-item ">
-            <a class="nav-link text-white" href="/dashboard">Dashboard</a>
-            </li>  
-            <li class="nav-item">
-            <a class="nav-link text-white" href="#">Services</a>
-            </li>
-            <li class="nav-item ">
-            <a class="nav-link text-white" href="#">Admin</a>
+           <Link to="/dashboard" className="nav-link text-white"> Admin</Link>
             </li>     
         </ul>
         <form class="d-flex">

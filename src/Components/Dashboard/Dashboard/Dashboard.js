@@ -1,23 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../../../App';
 import AddServices from '../AddServices/AddServices';
 import Sidebar from '../Sidebar/Sidebar';
 
 const Dashboard = () => {
+    const [loggedInUser, setLoggedInUser ] = useContext(UserContext);
     return (
           
-              <div className="row ">
-                <div className="col-md-2 col-sm-6">                  
+              
+              <div className="row container-fluid ">
+                                 
                 <Sidebar/>
-
-                    </div>
-                    <div className="col-md-5">
-                     <h2>jxcnkxnck</h2>
-                    </div>
-                    <div className="col-md-5">
-                     <h2>jxcnkxnck</h2>
+                    <div className="col-md-10 text-center text-white bg-warning">
+                    <h3 className="pt-5 mt-5">Wellcome  <h1 className="text-success">{loggedInUser.name}</h1> </h3>
                     </div>
                 </div>
-               
+                
             
         
     );

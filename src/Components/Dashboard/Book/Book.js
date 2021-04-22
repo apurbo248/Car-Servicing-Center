@@ -16,7 +16,7 @@ const Book = () => {
    
     
     useEffect(()=>{
-    fetch(`https://serene-cove-90844.herokuapp.com/getSingleItem/${_id}`)
+    fetch(`https://secure-tor-15170.herokuapp.com/getSingleItem/${_id}`)
         .then(res=>res.json())
         .then(data=>{
         
@@ -33,10 +33,10 @@ const Book = () => {
 
     const onSubmit = data => {
         console.log(data)
-        fetch('https://serene-cove-90844.herokuapp.com/order',{
+        fetch('https://secure-tor-15170.herokuapp.com/order',{
             method: 'POST',
             headers:{'Content-Type':'application/json'},
-            body: JSON.stringify(data,loggedInUser.email)
+            body: JSON.stringify(data)
         },[])
         .then(success=>{
             if(success){
@@ -69,11 +69,13 @@ const Book = () => {
            <input className="form-control btn text-white mt-2  w-50" type="submit" />
            </div>
           </div>
-          <Elements stripe={stripePromise}>
+            <div>
+            <Elements stripe={stripePromise}>
             <SimpleCard></SimpleCard>
             </Elements>
+             </div>
           
-       </form> 
+            </form> 
                 
             </div>
         </div>

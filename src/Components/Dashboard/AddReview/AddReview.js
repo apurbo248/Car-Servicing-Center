@@ -7,7 +7,7 @@ import Sidebar from '../Sidebar/Sidebar';
     
     const onSubmit = data => {
       console.log(data)
-      fetch('http://localhost:2000/addReview',{
+      fetch('https://secure-tor-15170.herokuapp.com/addReview',{
           method: 'POST',
           headers:{'Content-Type':'application/json'},
           body: JSON.stringify(data)

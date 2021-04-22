@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
-
 import { useHistory, useLocation } from 'react-router-dom';
 import { UserContext } from '../../../../App';
 import { initiateLoginFramework, googleSIgnInHandler,  facebookSignInHandler } from '../Login/LoginManager';

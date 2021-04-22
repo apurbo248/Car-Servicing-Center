@@ -7,7 +7,7 @@ const ManageService = () => {
     const [service, setService] = useState([]);
     const [delet, setDelet] = useState([]);
     useEffect(()=>{
-        fetch('https://serene-cove-90844.herokuapp.com/services')
+        fetch('https://secure-tor-15170.herokuapp.com/services')
         .then(res => res.json())
         .then(data=>{
            
@@ -17,7 +17,7 @@ const ManageService = () => {
     },[])
 
     const deleteProduct=(id)=>{
-        fetch(`https://serene-cove-90844.herokuapp.com/services/${id}`,{
+        fetch(`https://secure-tor-15170.herokuapp.com/services/${id}`,{
           method: 'DELETE'
         })
         .then(res=> res.text())

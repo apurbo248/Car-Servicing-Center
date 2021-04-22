@@ -21,7 +21,7 @@ export const googleSIgnInHandler= ()=> {
             email:email,
             success : true
         }
-        token();
+        // token();
         return signedInUser;
         })
         .catch((error) => {
@@ -30,13 +30,13 @@ export const googleSIgnInHandler= ()=> {
           });
 }
 
-const token=()=>{
-  firebase.auth().currentUser.getIdToken(true).then(function(idToken) {
-    sessionStorage.setItem('token',idToken);
-  }).catch(function(error) {
+// const token=()=>{
+//   firebase.auth().currentUser.getIdToken(true).then(function(idToken) {
+//     sessionStorage.setItem('token',idToken);
+//   }).catch(function(error) {
   
-  });
- }
+//   });
+//  }
 export const facebookSignInHandler = () => {
     const fbProvider = new firebase.auth.FacebookAuthProvider();
     return firebase
